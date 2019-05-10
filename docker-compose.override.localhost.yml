@@ -10,12 +10,12 @@ services:
       - '.:/usr/src/app'
     environment:
       - DEBUG=False
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=39.98.239.104
       - GEONODE_LB_PORT=80
-      - SITEURL=http://localhost/
-      - ALLOWED_HOSTS=['localhost', ]
-      - GEOSERVER_PUBLIC_LOCATION=http://localhost/gs/
-      - GEOSERVER_WEB_UI_LOCATION=http://localhost/geoserver/
+      - SITEURL=http://39.98.239.104/
+      - ALLOWED_HOSTS=['39.98.239.104', ]
+      - GEOSERVER_PUBLIC_LOCATION=http://39.98.239.104/gs/
+      - GEOSERVER_WEB_UI_LOCATION=http://39.98.239.104/geoserver/
 
   celery:
     build: .
@@ -23,15 +23,15 @@ services:
       - '.:/usr/src/app'
     environment:
       - DEBUG=False
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=39.98.239.104
       - GEONODE_LB_PORT=80
-      - SITEURL=http://localhost/
-      - ALLOWED_HOSTS=['localhost', ]
-      - GEOSERVER_PUBLIC_LOCATION=http://localhost/gs/
-      - GEOSERVER_WEB_UI_LOCATION=http://localhost/geoserver/
+      - SITEURL=http://39.98.239.104/
+      - ALLOWED_HOSTS=['39.98.239.104', ]
+      - GEOSERVER_PUBLIC_LOCATION=http://39.98.239.104/gs/
+      - GEOSERVER_WEB_UI_LOCATION=http://39.98.239.104/geoserver/
 
   geoserver:
     environment:
-      - GEONODE_LB_HOST_IP=localhost
+      - GEONODE_LB_HOST_IP=39.98.239.104
       - GEONODE_LB_PORT=80
   #    - NGINX_BASE_URL=
