@@ -4102,7 +4102,7 @@ msgstr "注册"
 
 #: geonode/templates/account/signup.html:25
 msgid "Create a new local account"
-msgstr "创建新的本地账户"
+msgstr "创建新账户"
 
 #: geonode/templates/account/signup.html:30
 msgid "Sorry, registrations are not open at this time."
