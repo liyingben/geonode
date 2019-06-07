@@ -1312,7 +1312,7 @@ def _create_db_featurestore(name, data, overwrite=False, charset="UTF-8", worksp
                               data,
                               overwrite=overwrite,
                               workspace=workspace,
-                              charset=charset)
+                              charset='UTF-8')
         resource = cat.get_resource(name, store=ds, workspace=workspace)
         assert resource is not None
         return ds, resource

@@ -57,7 +57,7 @@ def geoserver_upload(
         permissions=None,
         keywords=(),
         charset='UTF-8'):
-    charset='GBK'
+
     # Step 2. Check that it is uploading to the same resource type as
     # the existing resource
     logger.info('>>> Step 2. Make sure we are not trying to overwrite a '
